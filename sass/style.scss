@@ -1,0 +1,291 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+
+
+html {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F0F0F0;
+    color: #000000;
+    font-size: 0.875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+/* 中のコンテンツ部分の最大幅を設定 */
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// ヘッダー　----------------------------------------------------------------------
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header_outer {
+    display: flex;
+    align-items: center;
+    margin-left: 91px;
+}
+
+@media screen and (max-width: 900px) {
+    .header_outer {
+        display: block;
+        margin-left: 16px;
+    }
+}
+
+.header_logo {
+    width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    .header_logo {
+        width: 80px;
+        margin-top: -5px;
+    }
+}
+
+
+.header_nav {
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    .header_nav {
+        margin-left: 0px
+    }
+}
+
+.header_nav_list {
+    display: flex;
+
+    li:not(:last-child) {
+        margin-right: 27px;
+    }
+}
+
+
+.header_inquiry {
+    width: 200px;
+    height: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+
+    p {
+        text-align: center;
+        line-height: 80px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header_inquiry {
+        display: none;
+    }
+}
+
+.mainvisual {
+    margin-bottom: 129px;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+// news -------------------------------------------------------------------------
+
+.news {
+    margin-bottom: 120px;
+}
+
+.news_title {
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 0.667;
+    margin-bottom: 14px;
+    letter-spacing: 10px;
+}
+
+.news_title_info {
+    position: relative;
+    margin-bottom: 76px;
+}
+
+/*以下で線を表示*/
+.news_title_info:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -34px;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    background-color: #000000;
+    /*線の色*/
+}
+
+.news-box {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    .news-box {
+        flex-direction: column;
+    }
+}
+
+.news_item1 {
+    margin-right: 78px;
+    padding: 8px 0;
+}
+
+.news_item2 {
+    margin-right: 59px;
+    padding-top: 8px;
+    padding-left: 20px;
+    border-left: 1px solid #000;
+
+    .news_item-date {
+        margin-right: 18px;
+    }
+
+    .news_item-post {
+        padding: 3px 5px;
+    }
+
+}
+
+.news_item3 {
+    margin-right: 59px;
+    padding-top: 8px;
+    padding-left: 20px;
+    border-left: 1px solid #000;
+
+    .news_item-date {
+        margin-right: 18px;
+    }
+
+    .news_item-post {
+        padding: 3px 5px;
+    }
+}
+
+.news_item-date {
+    float: left;
+    margin-top: 2px;
+    margin-right: 19px;
+    font-size: 14px;
+}
+
+.news_item-post {
+    display: inline-block;
+    font-size: 12px;
+    width: 50px;
+    padding: 3px 7px;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.news_item-text {
+    letter-spacing: 2px;
+}
+
+// about -------------------------------------------------------------------------
+
+.about {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.about_img {
+    width: 760px;
+    height: 400px;
+    margin-right: 70px;
+}
+
+.about_title {
+    margin-top: 194px;
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 0.667;
+    margin-bottom: 14px;
+    letter-spacing: 11px;
+}
+
+.about_about_title {
+    position: relative;
+    margin-bottom: 77px;
+}
+
+/*以下で線を表示*/
+.about_about_title:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -34px;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    background-color: #000000;
+    /*線の色*/
+}
+
+.about_text {
+    width: 475px;
+    line-height: 30.6px;
+}
+
+// business ---------------------------------------------------------------------
+
+.business_title {
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 0.667;
+    margin-bottom: 14px;
+    letter-spacing: 11px;
+}
+
+.business_about_title {
+    position: relative;
+    margin-bottom: 77px;
+}
+
+/*以下で線を表示*/
+.business_about_title:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: -34px;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    background-color: #000000;
+    /*線の色*/
+}
