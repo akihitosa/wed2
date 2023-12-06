@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
 
-<head>
-  <meta name="robots" content="noindex,nofollow">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
+    <!-- OGPなど -->
+    <title>タイトル</title>
+    <meta name="description" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:card" content="summary" />
 
-  <!-- OGPなど -->
-  <title>タイトル</title>
-  <meta name="description" content="">
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-  <meta name="twitter:card" content="summary">
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/apple-touch-icon.png"
+      sizes="180x180"
+    />
 
-  <!-- ファビコン -->
-  <link rel="icon" href="./images/favicon.ico">
-  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
+    <!-- Google Fonts -->
 
-  <!-- Google Fonts -->
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-  <!-- css -->
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-
-<body>
+  <body>
     <!-- ヘッダー -->
     <header class="header">
       <div class="header_outer">
@@ -102,10 +106,78 @@
         <div class="business_group">
           <h2 class="business_title">BUSINESS</h2>
           <p class="business_about_title">事業内容</p>
+
+          <div class="business_wrapper">
+            <div class="business_item1">
+              <p class="business_item_title">
+                &#8722;&ensp;Web制作・マーケティング
+              </p>
+              <img src="./images/business1.jpg" alt="" class="business_img1" />
+              <p class="business_item_title">
+                &#8722;&ensp;インターネットメディア事業
+              </p>
+              <img src="./images/business2.jpg" alt="" class="business_img2" />
+            </div>
+            <div class="business_item2">
+              <p class="business_item_title">
+                &#8722;&ensp;プロモーション企画・制作
+              </p>
+              <img src="./images/business3.jpg" alt="" class="business_img1" />
+              <p class="business_item_title">
+                &#8722;&ensp;ソーシャル企画・運営
+              </p>
+              <img src="./images/business4.jpg" alt="" class="business_img2" />
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- company  -->
+      <div class="company inner">
+        <div class="company_group">
+          <h2 class="company_title">COMPANY</h2>
+          <p class="company_about_title">会社情報</p>
 
-</body>
+          <!-- ここからtable  -->
+          <table class="company_table">
+            <tr>
+              <th>会社名</th>
+              <td>ウェブエンターテイメントデザイン株式会社</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>東京都渋谷区桜丘町99-9 West Building 3F</td>
+            </tr>
+            <tr>
+              <th>代表</th>
+              <td>佐藤 MMMM</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2021年1月1日</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>3,000,000円</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>
+                <ul>
+                  <li>Web制作・マーケティング</li>
+                  <li>インターネットメディア事業</li>
+                  <li>プロモーション企画・制作</li>
+                  <li>ソーシャル企画・運営</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="company_img_box">
+          <img src="./images/company.jpg" alt="" class="company_img">
+        </div>
+      </div>
 
+    </main>
+  </body>
 </html>
