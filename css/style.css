@@ -119,7 +119,7 @@ a {
 
 .mainvisual {
   margin-bottom: 123px;
-  width: 100%;
+  width: 100vw;
   height: 600px;
   object-fit: cover;
 }
@@ -271,7 +271,7 @@ a {
 }
 
 .about_img {
-  width: 760px;
+  max-width: 760px;
   height: 400px;
   margin-top: 31px;
   margin-right: 70px;
@@ -335,7 +335,7 @@ a {
 }
 
 .about_text {
-  width: 475px;
+  max-width: 475px;
   line-height: 30.6px;
 }
 @media screen and (max-width: 900px) {
@@ -345,11 +345,11 @@ a {
 }
 
 .business {
-  margin-bottom: 120px;
+  margin-bottom: 115px;
 }
 @media screen and (max-width: 900px) {
   .business {
-    margin-bottom: 124px;
+    margin-bottom: 75px;
   }
 }
 
@@ -442,24 +442,29 @@ a {
 
 .company {
   margin-bottom: 185px;
-  padding-top: 103px;
-  padding-left: 60px;
-  display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media screen and (max-width: 900px) {
   .company {
-    padding: 0 10%;
-    flex-direction: column;
+    position: static;
+    padding: 0 4%;
+    display: block;
+    margin-bottom: 49px;
   }
 }
 
 .company_group {
   width: 567px;
+  height: 565px;
+  padding: 108px 61px;
+  background-color: #FFFFFF;
 }
 @media screen and (max-width: 900px) {
   .company_group {
     width: 100%;
+    height: 566px;
+    padding: 49px 20px;
   }
 }
 
@@ -474,6 +479,11 @@ a {
 .company_about_title {
   position: relative;
   margin-bottom: 77px;
+}
+@media screen and (max-width: 900px) {
+  .company_about_title {
+    margin-bottom: 48px;
+  }
 }
 
 /*以下で線を表示*/
@@ -496,24 +506,111 @@ a {
 }
 
 .company_table tr {
-  height: 23.5px;
   vertical-align: top;
 }
 .company_table th {
   text-align: left;
   width: 23%;
+  padding-bottom: 2.5px;
+}
+@media screen and (max-width: 900px) {
+  .company_table th {
+    display: block;
+    width: 100%;
+    margin-left: -1px;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .company_table td {
+    display: block;
+    width: 100%;
+    padding-left: 13px;
+    margin-bottom: 9.8px;
+  }
 }
 .company_table li {
   height: 25px;
 }
+@media screen and (max-width: 900px) {
+  .company_table li {
+    margin-bottom: -5px;
+  }
+}
 
 .company_img_box {
   margin-top: -27px;
+  position: absolute;
+  top: 19%;
+  left: 45.3%;
+}
+@media screen and (max-width: 900px) {
+  .company_img_box {
+    margin-top: 20px;
+    position: static;
+  }
 }
 
 .company_img {
-  width: 96%;
+  width: 547px;
   height: 400px;
   object-fit: cover;
-  margin-left: 25px;
+}
+@media screen and (max-width: 900px) {
+  .company_img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.footer {
+  height: 214px;
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 0 4%;
+  }
+}
+
+.footer_box {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .footer_box {
+    display: block;
+  }
+}
+
+.footer_logo {
+  width: 100px;
+  margin-top: 6px;
+  margin-top: 77px;
+  margin-bottom: 72px;
+}
+@media screen and (max-width: 900px) {
+  .footer_logo {
+    width: 80px;
+    margin-top: -5px;
+    margin-bottom: 0;
+  }
+}
+
+.footer_copyright {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.footer_right {
+  margin-top: 40px;
+}
+.footer_right p {
+  margin-right: 19px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 900px) {
+  .footer_right {
+    margin-top: 3px;
+    margin-bottom: 39px;
+  }
 }/*# sourceMappingURL=style.css.map */
